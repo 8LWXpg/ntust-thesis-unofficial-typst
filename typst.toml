@@ -1,0 +1,12 @@
+[package]
+name = "ntust-thesis"
+version = "0.1.0"
+entrypoint = "src/lib.typ"
+authors = ["8LWXpg"]
+compiler = "0.14.2"
+description = "NTUST Thesis Typst Template"
+license = "MIT"
+
+[template]
+path = "template"
+entrypoint = "main.typ"
