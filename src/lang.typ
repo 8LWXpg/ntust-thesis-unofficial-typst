@@ -1,4 +1,3 @@
-// env/lang.typ
 // Language-dependent labels for the NTUST thesis template
 // Note: Typst's #outline() and #bibliography() have language-dependent titles
 //       controlled by `set text(lang: ...)`. These labels are for custom sections

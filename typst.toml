@@ -6,6 +6,10 @@ authors = ["8LWXpg"]
 compiler = "0.14.2"
 description = "NTUST Thesis Typst Template"
 license = "MIT"
+repository = "https://github.com/8LWXpg/ntust-thesis-typst"
+keywords = ["ntust"]
+categories = ["thesis"]
+disciplines = ["education"]
 
 [template]
 path = "template"

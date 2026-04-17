@@ -1,10 +1,3 @@
-// ntust-thesis.typ
-// ============================================================================
-// NTUST Thesis Template for Typst
-// Converted from the LaTeX template by Hsiangjen Li
-// https://github.com/hsiangjenli/ntust-thesis-latex
-// ============================================================================
-
 #import "lang.typ": get-labels
 
 // Main template function
@@ -20,7 +13,7 @@
   // Logo
   logo-path: "logo.png",
   // Fonts
-  fonts: ("Times New Roman", "DFKai-SB"),
+  fonts: ("Times New Roman", "TW-MOE-Std-Kai"),
   // Body
   body,
 ) = {

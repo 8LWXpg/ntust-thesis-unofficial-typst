@@ -5,7 +5,7 @@
 // To compile:  typst compile main.typ
 // ============================================================================
 
-#import "@local/ntust-thesis:0.1.0": get-labels, ntust-thesis
+#import "@preview/ntust-thesis:0.1.0": get-labels, ntust-thesis
 #import "frontpages/names.typ": thesis-info
 
 // Choose the language
@@ -22,6 +22,7 @@
     en: include "frontpages/abstract.en.typ",
   ),
   acknowledgement: include "frontpages/ackn.typ",
+  // fonts: ("Times New Roman", "DFKai-SB"), // 使用 Window 自帶的標楷體
 )
 
 // Main body
