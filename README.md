@@ -1,6 +1,6 @@
 # NTUST Thesis Typst Template
 
-A template for National Taiwan University of Science and Technology (NTUST) thesis, implemented in [Typst](https://typst.app/).
+臺灣科技大學論文模板。Thesis template for National Taiwan University of Science and Technology.
 
 ## Usage
 
