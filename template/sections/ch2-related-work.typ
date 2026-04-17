@@ -21,3 +21,11 @@ This is cite command @supercutecat2024.
   ),
   caption: [Summary of Related Work on Cats],
 ) <tab:my_label>
+
+=== Cats in culture
+
+#lorem(50)
+
+==== Cats in mythology
+
+#lorem(30)

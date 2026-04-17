@@ -10,7 +10,7 @@
 
 // Choose the language
 // Change to "zh" for Chinese mode
-#let language = "en"
+#let language = "zh"
 #let l = get-labels(language)
 
 // Apply the thesis template

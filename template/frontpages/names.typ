@@ -32,24 +32,17 @@
   department: (
     zh: "資訊工程系",
     en: "CSIE",
-    en-full: "Department of Computer Science and Information Engineering",
-  ),
-  // 學院名 / College name (leave en: "" if not applicable)
-  college: (
-    en: "College Electrical Engineering and Computer Science",
   ),
   // 學位 / Degree
   degree: (
     zh: "碩士",
-    en: "Master of Science",
+    en: "Master ",
   ),
   // 口試日期 / Defense date
   date: (
-    zh: (year: "一一二", month: "六"),
-    en: (year: "2024", month: "6"),
+    year: "一一二",
+    month: "六",
   ),
-  // 學校所在地 / Location
-  place: "Taipei, Taiwan",
   // 畢業級別 (用於書背) / Graduation class (for spine)
   graduation-class: "112",
 )

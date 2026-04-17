@@ -19,6 +19,8 @@
   acknowledgement: none,
   // Logo
   logo-path: "logo.png",
+  // Fonts
+  fonts: ("Times New Roman", "DFKai-SB"),
   // Body
   body,
 ) = {
@@ -40,7 +42,7 @@
   )
 
   set text(
-    font: ("Times New Roman", "DFKai-SB"),
+    font: fonts,
     size: 12pt,
     lang: if lang == "zh" { "zh" } else { "en" },
     region: if lang == "zh" { "TW" } else { "US" },
@@ -54,7 +56,7 @@
 
   // Heading configuration
   // Language-dependent heading numbering:
-  //   zh: 第一章 / (一) / 1. / (1)
+  //   zh: 第一章 / 一、 / （一） / 1. / (1)
   //   en: Chapter 1 / 1.1 / 1.1.1 / 1.1.1.1
   // This numbering function is also used by outline() for ToC entries.
   let heading-numbering = if lang == "zh" {
@@ -63,11 +65,11 @@
       if n.len() == 1 {
         [第#numbering("一", n.at(0))章]
       } else if n.len() == 2 {
-        [(#numbering("一", n.at(1)))]
+        [#numbering("一", n.at(1))、]
       } else if n.len() == 3 {
-        [#n.at(2).]
+        [（#numbering("一", n.at(2))）]
       } else if n.len() >= 4 {
-        [(#n.at(3))]
+        [#numbering("1.", n.at(3))]
       }
     }
   } else {
@@ -103,7 +105,7 @@
   }
 
   // Level 2: Section
-  // zh: (一) Title  |  en: 1.1 Title
+  // zh: 一、 Title  |  en: 1.1 Title
   show heading.where(level: 2): it => {
     v(1.5em)
     {
@@ -119,7 +121,7 @@
   }
 
   // Level 3: Subsection
-  // zh: 1. Title  |  en: 1.1.1 Title
+  // zh: （一） Title  |  en: 1.1.1 Title
   show heading.where(level: 3): it => {
     v(1em)
     {
@@ -135,7 +137,7 @@
   }
 
   // Level 4: Sub-subsection
-  // zh: (1) Title  |  en: 1.1.1.1 Title
+  // zh: 1. Title  |  en: 1.1.1.1 Title
   show heading.where(level: 4): it => {
     v(0.5em)
     {
@@ -188,7 +190,7 @@
       column-gutter: 0.5cm,
       image(logo-path, width: 3cm),
       {
-        text(size: 28pt, weight: "bold")[#info.university.zh\ #info.department.zh]
+        text(size: 28pt, weight: "bold")[#info.university.zh \ #info.department.zh]
       },
     )
 
@@ -207,7 +209,7 @@
     #v(1fr)
 
     // Student name
-    #text(size: 18pt)[#info.author.zh\ #info.student-id]
+    #text(size: 18pt)[#info.author.at(lang)\ #info.student-id]
 
     #v(1cm)
 
@@ -230,7 +232,7 @@
 
     // Date (ROC calendar)
     #text(size: 18pt)[
-      中華民國 #info.date.zh.year 年 #info.date.zh.month 月
+      中華民國 #info.date.year 年 #info.date.month 月
     ]
   ]
 
@@ -241,7 +243,6 @@
   // Recommendation letter placeholder
   [
     #pagebreak()
-    #set page(numbering: none)
     #heading(level: 1, numbering: none)[#l.inner-cover]
     #v(1fr)
     #align(center, text(fill: luma(180), size: 14pt)[
@@ -253,11 +254,10 @@
   // Committee approval placeholder
   [
     #pagebreak()
-    #set page(numbering: none)
     #heading(level: 1, numbering: none)[#l.committee-form]
     #v(1fr)
     #align(center, text(fill: luma(180), size: 14pt)[
-      （此頁請放入已簽名之審定書 / Insert signed approval letter here）
+      （此頁請放入已簽名之審定書 / Insert signed qualification form here）
     ])
     #v(1fr)
   ]

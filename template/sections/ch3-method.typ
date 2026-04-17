@@ -3,9 +3,9 @@
 #figure(
   image("../figures/img.png", width: 100%),
   caption: [A cat meme.],
-) <fig:overall_framework>
+) <fig:overall-framework>
 
 #figure(
   image("../figures/img.png", width: 100%),
   caption: [A cat meme.],
-) <fig:2>
+) <fig:cat-meme>
