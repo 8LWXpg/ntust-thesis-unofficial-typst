@@ -24,6 +24,11 @@ typst compile main.typ
 
 [main.pdf](https://github.com/8LWXpg/ntust-thesis-typst/blob/main/build/main.pdf)
 
+## Official NTUST Thesis Format
+
+- [論文上傳步驟說明](https://etheses.lib.ntust.edu.tw/zh-hant/help/aboutedit/)
+- [國立臺灣科技大學學位論文撰寫、編排規則及注意事項（112.03.07）](https://etheses.lib.ntust.edu.tw/media/download/ed6370c8-7c81-11ee-b999-0242ac1f0806.pdf)
+
 ## Notice
 
 Placeholder text and structure adapted from

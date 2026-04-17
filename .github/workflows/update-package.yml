@@ -1,0 +1,39 @@
+name: Update package
+
+# push a new tag before running this action
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  push:
+    name: push to package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: get latest tag
+        id: latest_tag
+        uses: WyriHaximus/github-action-get-previous-tag@v1
+
+      - name: set tag
+        id: parsed_tag
+        run: |
+          version=${{ steps.latest_tag.outputs.tag }}
+          echo "tag=${version:1}" >> $GITHUB_OUTPUT
+
+      - name: push
+        uses: nkoppel/push-files-to-another-repository@v1.1.3
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.REPO_PAT }}
+        with:
+          commit-email: ${{ secrets.EMAIL }}
+          source-files: src template CHANGELOG.md LICENSE README.md typst.toml thumbnail.png
+          destination-username: ${{ github.repository_owner }}
+          destination-repository: packages
+          destination-directory: packages/preview/ntust-thesis/${{ steps.parsed_tag.outputs.tag }}
+          destination-branch: ntust-thesis
