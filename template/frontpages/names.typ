@@ -21,7 +21,7 @@
   // 指導教授 / Advisors (array of bilingual dicts)
   advisors: (
     (zh: "楊龍龍 博士", en: "Dr. Dragon Yang"),
-    (zh: "第二位教授", en: "Dr. Second Advisor"),
+    (zh: "第二位 教授", en: "Dr. Second Advisor"),
   ),
   // 校名 / University name
   university: (

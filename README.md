@@ -18,7 +18,10 @@ typst compile main.typ
 
 ### Fonts
 
-預設/建議使用[教育部標準楷書](https://language.moe.gov.tw/001/Upload/Files/site_content/M0001/edukai-5.0.zip) (TW-MOE-Std-Kai)
+預設使用以下字體：
+
+- [Liberation Serif](https://github.com/liberationfonts/liberation-fonts/releases)
+- [教育部標準楷書](https://language.moe.gov.tw/001/Upload/Files/site_content/M0001/edukai-5.0.zip) (TW-MOE-Std-Kai)
 
 ## Preview
 

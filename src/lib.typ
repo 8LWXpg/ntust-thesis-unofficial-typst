@@ -13,7 +13,7 @@
   // Logo
   logo-path: "logo.png",
   // Fonts
-  fonts: ("Times New Roman", "TW-MOE-Std-Kai"),
+  fonts: ("Liberation Serif", "TW-MOE-Std-Kai"),
   // Body
   body,
 ) = {
@@ -171,7 +171,7 @@
   // COVER PAGE (no page number)
   page(
     numbering: none,
-    margin: (top: 3cm, bottom: 2cm, left: 3cm, right: 3cm),
+    margin: (top: 4cm, bottom: 3cm, left: 3cm, right: 3cm),
   )[
     #set align(center)
     #set par(first-line-indent: 0pt)
@@ -192,13 +192,13 @@
     #v(1cm)
 
     // Degree thesis
-    #text(size: 28pt, weight: "bold")[#info.degree.at(lang) #l.degree-thesis]
+    #text(size: 28pt)[#info.degree.at(lang) #l.degree-thesis]
     #v(1cm)
 
-    // Titles (24pt bold per NTUST spec)
-    #text(size: 24pt, weight: "bold")[#info.title.zh]
-    #v(1cm)
-    #text(size: 24pt, weight: "bold")[#info.title.en]
+    // Titles
+    #text(size: 24pt)[#info.title.zh]
+    #v(.5em)
+    #text(size: 24pt)[#info.title.en]
     #v(1fr)
 
     // Student name
@@ -304,4 +304,13 @@
   counter(page).update(1)
 
   body
+
+  // Copyright form placeholder
+  pagebreak()
+  heading(level: 1, numbering: none)[#l.copyright-form]
+  v(1fr)
+  align(center, text(fill: luma(180), size: 14pt)[
+    （此頁請放入已簽名之授權書 / Insert signed letter of authority here）
+  ])
+  v(1fr)
 }

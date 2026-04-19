@@ -22,7 +22,7 @@
     en: include "frontpages/abstract.en.typ",
   ),
   acknowledgement: include "frontpages/ackn.typ",
-  // fonts: ("Times New Roman", "DFKai-SB"), // 使用 Window 自帶的標楷體
+  // fonts: ("Times New Roman", "DFKai-SB"), // 使用 Window 自帶的字體
 )
 
 // Main body
@@ -35,12 +35,3 @@
 // References
 #pagebreak()
 #bibliography("cite.bib", style: "ieee", title: l.references)
-
-// Copyright form placeholder
-#pagebreak()
-#heading(level: 1, numbering: none)[#l.copyright-form]
-#v(1fr)
-#align(center, text(fill: luma(180), size: 14pt)[
-  （此頁請放入已簽名之授權書 / Insert signed letter of authority here）
-])
-#v(1fr)
