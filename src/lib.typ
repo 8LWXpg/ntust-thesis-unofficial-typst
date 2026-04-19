@@ -209,10 +209,11 @@
     // Advisor(s)
     #{
       set text(size: 18pt)
+      set align(center)
       let first = info.advisors.at(0, default: (:))
       let rest = if info.advisors.len() > 1 { info.advisors.slice(1) } else { () }
       grid(
-        columns: (4.5cm, auto),
+        columns: (auto, auto),
         align: (right, left),
         column-gutter: 0cm,
         row-gutter: 0.3cm,
