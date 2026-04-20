@@ -7,7 +7,7 @@
 Create a new project using this template:
 
 ```shell
-typst init @preview/ntust-thesis:0.1.0
+typst init @preview/ntust-thesis:1.0.0
 ```
 
 And then compile:
