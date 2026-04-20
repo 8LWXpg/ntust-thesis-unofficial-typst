@@ -35,5 +35,5 @@ jobs:
           source-files: src template CHANGELOG.md LICENSE README.md typst.toml thumbnail.png
           destination-username: ${{ github.repository_owner }}
           destination-repository: packages
-          destination-directory: packages/preview/ntust-thesis/${{ steps.parsed_tag.outputs.tag }}
-          destination-branch: ntust-thesis
+          destination-directory: packages/preview/ntust-thesis-unofficial/${{ steps.parsed_tag.outputs.tag }}
+          destination-branch: ntust-thesis-unofficial

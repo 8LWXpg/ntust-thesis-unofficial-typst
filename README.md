@@ -7,7 +7,7 @@
 Create a new project using this template:
 
 ```shell
-typst init @preview/ntust-thesis:1.0.0
+typst init @preview/ntust-thesis-unofficial:1.0.0
 ```
 
 And then compile:
@@ -25,7 +25,7 @@ Default fonts used in this template:
 
 ## Preview
 
-[main.pdf](https://github.com/8LWXpg/ntust-thesis-typst/blob/main/build/main.pdf)
+[main.pdf](https://github.com/8LWXpg/ntust-thesis-unofficial-typst/blob/main/build/main.pdf)
 
 ## Official NTUST Thesis Format
 
@@ -36,7 +36,7 @@ Default fonts used in this template:
 
 Placeholder text and structure adapted from
 
-- [hadziq/ntust-thesis](https://github.com/hadziq/ntust-thesis)
-- [hsiangjenli/ntust-thesis-latex](https://github.com/hsiangjenli/ntust-thesis-latex)
+- [hadziq/ntust-thesis-unofficial](https://github.com/hadziq/ntust-thesis-unofficial)
+- [hsiangjenli/ntust-thesis-unofficial-latex](https://github.com/hsiangjenli/ntust-thesis-unofficial-latex)
 
 Both licensed under Apache 2.0.
