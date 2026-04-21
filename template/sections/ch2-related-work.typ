@@ -22,6 +22,8 @@ This is cite command @supercutecat2024.
   caption: [Summary of Related Work on Cats],
 ) <tab:my_label>
 
+#lorem(50)
+
 === Cats in culture
 
 #lorem(50)
