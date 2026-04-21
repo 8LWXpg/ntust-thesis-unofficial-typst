@@ -18,7 +18,7 @@ jobs:
 
       - name: get latest tag
         id: latest_tag
-        uses: WyriHaximus/github-action-get-previous-tag@v1
+        uses: WyriHaximus/github-action-get-previous-tag@v2
 
       - name: set tag
         id: parsed_tag
