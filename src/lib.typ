@@ -45,6 +45,7 @@
     leading: 0.9em,
     first-line-indent: 2em,
     spacing: 1.5em,
+    justify: true,
   )
 
   // Heading configuration
