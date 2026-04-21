@@ -14,6 +14,12 @@
   logo-path: "logo.png",
   // Fonts
   fonts: ("Liberation Serif", "TW-MOE-Std-Kai"),
+  // Recommendation form (image)
+  recommendation-form: none,
+  // Committee approval form (image)
+  committee-form: none,
+  // Copyright form (image)
+  copyright-form: none,
   // Body
   body,
 ) = {
@@ -101,17 +107,12 @@
   // Level 2: Section
   // zh: 一、 Title  |  en: 1.1 Title
   show heading.where(level: 2): it => {
-    v(1.5em)
-    {
-      set text(size: 18pt, weight: "bold")
-      set par(first-line-indent: 0pt)
-      if it.numbering != none {
-        counter(heading).display(it.numbering)
-        h(0.5em)
-      }
-      it.body
+    set text(size: 18pt, weight: "bold")
+    set par(first-line-indent: 0pt)
+    if it.numbering != none {
+      counter(heading).display(it.numbering)
     }
-    v(1em)
+    it.body
   }
 
   // Level 3: Subsection
@@ -123,27 +124,21 @@
       set par(first-line-indent: 0pt)
       if it.numbering != none {
         counter(heading).display(it.numbering)
-        h(0.5em)
       }
       it.body
     }
-    v(0.5em)
   }
 
   // Level 4: Sub-subsection
   // zh: 1. Title  |  en: 1.1.1.1 Title
   show heading.where(level: 4): it => {
-    v(0.5em)
-    {
-      set text(size: 12pt, weight: "bold")
-      set par(first-line-indent: 0pt)
-      if it.numbering != none {
-        counter(heading).display(it.numbering)
-        h(0.5em)
-      }
-      it.body
+    set text(size: 12pt, weight: "bold")
+    set par(first-line-indent: 0pt)
+    if it.numbering != none {
+      counter(heading).display(it.numbering)
+      h(0.5em)
     }
-    v(0.3em)
+    it.body
   }
 
   // Figure & Table numbering (chapter-relative: e.g. "1-2")
@@ -236,26 +231,32 @@
   counter(page).update(1)
 
   // Recommendation letter placeholder
-  [
-    #pagebreak()
-    #heading(level: 1, numbering: none)[#l.inner-cover]
-    #v(1fr)
-    #align(center, text(fill: luma(180), size: 14pt)[
-      （此頁請放入已簽名之推薦書 / Insert signed recommendation letter here）
-    ])
-    #v(1fr)
-  ]
+  {
+    heading(level: 1, numbering: none)[#l.recommendation-form]
+    v(1fr)
+    if recommendation-form != none {
+      align(center, recommendation-form)
+    } else {
+      align(center, text(fill: luma(180), size: 14pt)[
+        （此頁請放入已簽名之推薦書 / Insert signed recommendation letter here）
+      ])
+    }
+    v(1fr)
+  }
 
   // Committee approval placeholder
-  [
-    #pagebreak()
-    #heading(level: 1, numbering: none)[#l.committee-form]
-    #v(1fr)
-    #align(center, text(fill: luma(180), size: 14pt)[
-      （此頁請放入已簽名之審定書 / Insert signed qualification form here）
-    ])
-    #v(1fr)
-  ]
+  {
+    heading(level: 1, numbering: none)[#l.committee-form]
+    v(1fr)
+    if committee-form != none {
+      align(center, committee-form)
+    } else {
+      align(center, text(fill: luma(180), size: 14pt)[
+        （此頁請放入已簽名之審定書 / Insert signed qualification form here）
+      ])
+    }
+    v(1fr)
+  }
 
   // Chinese abstract
   if abstracts.at("zh", default: none) != none [
@@ -308,11 +309,14 @@
   body
 
   // Copyright form placeholder
-  pagebreak()
   heading(level: 1, numbering: none)[#l.copyright-form]
   v(1fr)
-  align(center, text(fill: luma(180), size: 14pt)[
-    （此頁請放入已簽名之授權書 / Insert signed letter of authority here）
-  ])
+  if copyright-form != none {
+    align(center, copyright-form)
+  } else {
+    align(center, text(fill: luma(180), size: 14pt)[
+      （此頁請放入已簽名之授權書 / Insert signed letter of authority here）
+    ])
+  }
   v(1fr)
 }

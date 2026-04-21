@@ -5,7 +5,7 @@
 
 #let labels = (
   en: (
-    inner-cover: "Recommendation Form",
+    recommendation-form: "Recommendation Form",
     committee-form: "Qualification Form",
     copyright-form: "Letter of Authority",
     c-abstract: "論文摘要",
@@ -25,7 +25,7 @@
     advisor-label: "Advisor: ",
   ),
   zh: (
-    inner-cover: "指導教授推薦書",
+    recommendation-form: "指導教授推薦書",
     committee-form: "考試委員審定書",
     copyright-form: "授權書",
     c-abstract: "論文摘要",

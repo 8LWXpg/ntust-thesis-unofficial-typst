@@ -23,6 +23,9 @@
   ),
   acknowledgement: include "frontpages/ackn.typ",
   // fonts: ("Times New Roman", "DFKai-SB"), // 使用 Window 自帶的字體
+  // recommendation-form: image("figures/img.png"), // 放入推薦信圖片
+  // committee-form: image("figures/committee-form.png"), // 放入審定書圖片
+  // copyright-form: image("figures/copyright-form.png"), // 放入授權書圖片
 )
 
 // Main body
