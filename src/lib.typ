@@ -284,7 +284,7 @@
   outline(
     title: l.toc,
     depth: 3,
-    indent: auto,
+    indent: 2em,
   )
 
   // List of Figures
