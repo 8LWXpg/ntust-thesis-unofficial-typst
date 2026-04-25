@@ -36,7 +36,7 @@ Default fonts used in this template:
 
 Placeholder text and structure adapted from
 
-- [hadziq/ntust-thesis-unofficial](https://github.com/hadziq/ntust-thesis-unofficial)
-- [hsiangjenli/ntust-thesis-unofficial-latex](https://github.com/hsiangjenli/ntust-thesis-unofficial-latex)
+- [hadziq/ntust-thesis-unofficial](https://github.com/hadziq/ntust-thesis)
+- [hsiangjenli/ntust-thesis-unofficial-latex](https://github.com/hsiangjenli/ntust-thesis-latex)
 
 Both licensed under Apache 2.0.
