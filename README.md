@@ -25,7 +25,7 @@ Default fonts used in this template:
 
 ## Preview
 
-[main.pdf](https://github.com/8LWXpg/ntust-thesis-unofficial-typst/blob/main/build/main.pdf)
+[main.pdf](https://github.com/8LWXpg/ntust-thesis-unofficial-typst/blob/v1.0.0/build/main.pdf)
 
 ## Official NTUST Thesis Format
 
@@ -36,7 +36,7 @@ Default fonts used in this template:
 
 Placeholder text and structure adapted from
 
-- [hadziq/ntust-thesis-unofficial](https://github.com/hadziq/ntust-thesis)
-- [hsiangjenli/ntust-thesis-unofficial-latex](https://github.com/hsiangjenli/ntust-thesis-latex)
+- [hadziq/ntust-thesis](https://github.com/hadziq/ntust-thesis)
+- [hsiangjenli/ntust-thesis-latex](https://github.com/hsiangjenli/ntust-thesis-latex)
 
 Both licensed under Apache 2.0.
