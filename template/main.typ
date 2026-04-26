@@ -36,5 +36,4 @@
 #include "sections/conclusion.typ"
 
 // References
-#pagebreak()
 #bibliography("cite.bib", style: "ieee", title: l.references)

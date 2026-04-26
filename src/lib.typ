@@ -254,22 +254,22 @@
   }
 
   // Chinese abstract
-  if abstracts.at("zh", default: none) != none [
-    #heading(level: 1, numbering: none)[#l.c-abstract]
-    #abstracts.zh
-  ]
+  if abstracts.at("zh", default: none) != none {
+    heading(level: 1, numbering: none)[#l.c-abstract]
+    abstracts.zh
+  }
 
   // English abstract
-  if abstracts.at("en", default: none) != none [
-    #heading(level: 1, numbering: none)[#l.e-abstract]
-    #abstracts.en
-  ]
+  if abstracts.at("en", default: none) != none {
+    heading(level: 1, numbering: none)[#l.e-abstract]
+    abstracts.en
+  }
 
   // Acknowledgement
-  if acknowledgement != none [
-    #heading(level: 1, numbering: none)[#l.acknowledgement]
-    #acknowledgement
-  ]
+  if acknowledgement != none {
+    heading(level: 1, numbering: none)[#l.acknowledgement]
+    acknowledgement
+  }
 
   // Table of Contents
   outline(
