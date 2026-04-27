@@ -11,8 +11,8 @@
   abstracts: (zh: none, en: none),
   // Acknowledgement
   acknowledgement: none,
-  // Logo
-  logo-path: "logo.png",
+  // Logo (image)
+  logo: none,
   // Fonts
   fonts: ("Liberation Serif", "TW-MOE-Std-Kai"),
   // Recommendation form (image)
@@ -174,7 +174,13 @@
       columns: (auto, 1fr),
       align: (left + horizon, center + horizon),
       column-gutter: 0.5cm,
-      image(logo-path, width: 3cm),
+      if logo != none {
+        set image(width: 3cm)
+        logo
+      } else {
+        set align(center)
+        circle(width: 3cm, height: 3cm, fill: luma(180))[logo placeholder]
+      },
       {
         text(size: 28pt, weight: "bold")[#info.university.zh \ #info.department.zh]
       },

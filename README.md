@@ -7,7 +7,19 @@
 Create a new project using this template:
 
 ```shell
-typst init @preview/ntust-thesis-unofficial:1.0.0
+typst init @preview/ntust-thesis-unofficial:1.0.0 my-thesis
+```
+
+Move into the project directory:
+
+```shell
+cd my-thesis
+```
+
+Download [NTUST logo](https://www.secretariat.ntust.edu.tw/p/406-1063-85380,r1785.php?Lang=zh-tw) or run the following command to download it directly into the project:
+
+```shell
+curl -L -o logo.png "https://www.secretariat.ntust.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Mekl3TDNCMFlWOHpPRE13TkY4M09UTXhPVFUzWHpNMU16YzJMbkJ1Wnc9PQ==&fname=LOGGYSOKRKDCOOYXEDLKIG24FC30TWLK50FGXSMKGG25WWRKDCMKYSTWSSOKCDFCNOWWUT0520FGNK24KOOKQL00
 ```
 
 And then compile:
@@ -22,6 +34,10 @@ Default fonts used in this template:
 
 - [Liberation Serif](https://github.com/liberationfonts/liberation-fonts/releases)
 - [教育部標準楷書 (TW-MOE-Std-Kai)](https://language.moe.gov.tw/001/Upload/Files/site_content/M0001/edukai-5.0.zip)
+
+### Logo
+
+There are no clear terms regarding the distribution of the logo in this template, so it's not included in the repository. You can download it from [NTUST official website](https://www.secretariat.ntust.edu.tw/p/406-1063-85380,r1785.php).
 
 ## Preview
 
