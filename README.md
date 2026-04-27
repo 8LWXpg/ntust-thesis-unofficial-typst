@@ -37,7 +37,7 @@ Default fonts used in this template:
 
 ### Logo
 
-There are no clear terms regarding the distribution of the logo in this template, so it's not included in the repository. You can download it from [NTUST official website](https://www.secretariat.ntust.edu.tw/p/406-1063-85380,r1785.php).
+There are no clear terms regarding the distribution of the logo, so it's not included in the repository. You can download it from [NTUST official website](https://www.secretariat.ntust.edu.tw/p/406-1063-85380,r1785.php).
 
 ## Preview
 
