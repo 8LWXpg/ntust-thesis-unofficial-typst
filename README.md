@@ -22,6 +22,17 @@ Download [NTUST logo](https://www.secretariat.ntust.edu.tw/p/406-1063-85380,r178
 curl -L -o logo.png "https://www.secretariat.ntust.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Mekl3TDNCMFlWOHpPRE13TkY4M09UTXhPVFUzWHpNMU16YzJMbkJ1Wnc9PQ==&fname=LOGGYSOKRKDCOOYXEDLKIG24FC30TWLK50FGXSMKGG25WWRKDCMKYSTWSSOKCDFCNOWWUT0520FGNK24KOOKQL00
 ```
 
+Change the logo and fonts in `main.typ` if needed.
+
+```typ
+#show: ntust-thesis.with(
+  ...
+  // logo: image("logo.png"), // 放入校徽圖片
+  // fonts: ("Times New Roman", "DFKai-SB"), // 使用 Window 自帶的字體
+  ...
+)
+```
+
 And then compile:
 
 ```shell
