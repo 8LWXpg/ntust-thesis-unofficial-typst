@@ -32,7 +32,6 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.REPO_PAT }}
         with:
           commit-email: 105704427+8LWXpg@users.noreply.github.com
-          commit-message: "ntust-thesis-unofficial:${{ steps.parsed_tag.outputs.tag }}"
           source-files: src template CHANGELOG.md LICENSE README.md typst.toml thumbnail.png
           destination-username: ${{ github.repository_owner }}
           destination-repository: packages
