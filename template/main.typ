@@ -5,13 +5,12 @@
 // To compile:  typst compile main.typ
 // ============================================================================
 
-#import "@preview/ntust-thesis-unofficial:1.0.0": get-labels, ntust-thesis
+#import "@preview/ntust-thesis-unofficial:1.0.0": ntust-thesis
 #import "frontpages/names.typ": thesis-info
 
 // Choose the language
 // Change to "zh" for Chinese mode
 #let language = "zh"
-#let l = get-labels(language)
 
 // Apply the thesis template
 #show: ntust-thesis.with(
@@ -22,6 +21,7 @@
     en: include "frontpages/abstract.en.typ",
   ),
   acknowledgement: include "frontpages/ackn.typ",
+  references: bibliography("cite.bib"),
   // logo: image("logo.png"), // 放入校徽圖片
   // fonts: ("Times New Roman", "DFKai-SB"), // 使用 Window 自帶的字體
   // recommendation-form: image("figures/img.png"), // 放入推薦信圖片
@@ -35,6 +35,3 @@
 #include "sections/ch3-method.typ"
 #include "sections/ch4-experiment.typ"
 #include "sections/conclusion.typ"
-
-// References
-#bibliography("cite.bib", style: "ieee", title: l.references)

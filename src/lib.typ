@@ -11,6 +11,8 @@
   abstracts: (zh: none, en: none),
   // Acknowledgement
   acknowledgement: none,
+  // Bibliography (bibliography)
+  references: none,
   // Logo (image)
   logo: none,
   // Fonts
@@ -301,6 +303,14 @@
   counter(page).update(1)
 
   body
+
+  if references != none {
+    set bibliography(
+      title: l.references,
+      style: "ieee",
+    )
+    references
+  }
 
   // Copyright form placeholder
   heading(level: 1, numbering: none)[#l.copyright-form]
