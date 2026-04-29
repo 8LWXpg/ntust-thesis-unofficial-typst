@@ -19,7 +19,7 @@ cd my-thesis
 Download [NTUST logo](https://www.secretariat.ntust.edu.tw/p/406-1063-85380,r1785.php?Lang=zh-tw) or run the following command to download it directly into the project:
 
 ```shell
-curl -L -o logo.png "https://www.secretariat.ntust.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Mekl3TDNCMFlWOHpPRE13TkY4M09UTXhPVFUzWHpNMU16YzJMbkJ1Wnc9PQ==&fname=LOGGYSOKRKDCOOYXEDLKIG24FC30TWLK50FGXSMKGG25WWRKDCMKYSTWSSOKCDFCNOWWUT0520FGNK24KOOKQL00
+curl -L -o logo.png "https://www.secretariat.ntust.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Mekl3TDNCMFlWOHpPRE13TkY4M09UTXhPVFUzWHpNMU16YzJMbkJ1Wnc9PQ==&fname=LOGGYSOKRKDCOOYXEDLKIG24FC30TWLK50FGXSMKGG25WWRKDCMKYSTWSSOKCDFCNOWWUT0520FGNK24KOOKQL00"
 ```
 
 Change the logo and fonts in `main.typ` if needed.
