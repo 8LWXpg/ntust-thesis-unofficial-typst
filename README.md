@@ -7,7 +7,7 @@
 Create a new project using this template:
 
 ```shell
-typst init @preview/ntust-thesis-unofficial:1.0.0 my-thesis
+typst init @preview/ntust-thesis-unofficial:1.0.1 my-thesis
 ```
 
 Move into the project directory:

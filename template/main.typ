@@ -5,7 +5,7 @@
 // To compile:  typst compile main.typ
 // ============================================================================
 
-#import "@preview/ntust-thesis-unofficial:1.0.0": ntust-thesis
+#import "@preview/ntust-thesis-unofficial:1.0.1": ntust-thesis
 #import "frontpages/names.typ": thesis-info
 
 // Choose the language
