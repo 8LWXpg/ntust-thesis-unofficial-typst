@@ -52,7 +52,7 @@ There are no clear terms regarding the distribution of the logo, so it's not inc
 
 ## Preview
 
-[main.pdf](https://github.com/8LWXpg/ntust-thesis-unofficial-typst/blob/v1.0.0/build/main.pdf)
+[main.pdf](https://github.com/8LWXpg/ntust-thesis-unofficial-typst/blob/v1.0.1/build/main.pdf)
 
 ## Official NTUST Thesis Format
 
